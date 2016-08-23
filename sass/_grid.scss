@@ -1,0 +1,83 @@
+$maxColumns: 12;
+$total-width: 100;
+$gutter: 10px;
+
+@function getWidth($cols, $base: 12){
+    @return ($cols*$total-width / $base)*1%;
+}
+
+.grid{
+    width: 100%;
+    height: auto;
+
+    & > div[class^='c-']{
+        float: left;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        box-sizing: border-box;
+    }
+
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    &.no-gutter{
+        & > div[class^='c-']{
+            padding: 0;
+        }
+    }
+    
+    &.same-height{
+        overflow: hidden;
+
+        & > div[class^='c-']{
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+
+    @for $i from 1 through $maxColumns {
+        .c-#{$i} {
+            width: getWidth($i, $maxColumns);
+        }
+    }
+
+    /*
+     * MOBILE
+     * (No need to add column styles from mobile up since these
+     * are defined in the default classes. Using mobile to define
+     * widths for mobile only screen sizes.)
+     */
+    
+    @include mobile-only{
+        @for $i from 1 through $maxColumns {
+            .c-m-#{$i} {
+                width: getWidth($i, $maxColumns);
+            }
+        }
+    }
+
+    /*
+     * TABLET
+     */
+    @include tablet{
+        @for $i from 1 through $maxColumns {
+            .c-t-#{$i} {
+                width: getWidth($i, $maxColumns);
+            }
+        }
+    }
+
+    /*
+     * DESKTOP
+     */
+    @include desktop{
+        @for $i from 1 through $maxColumns {
+            .c-d-#{$i} {
+                width: getWidth($i, $maxColumns);
+            }
+        }
+    }
+}

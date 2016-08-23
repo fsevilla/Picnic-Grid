@@ -1,0 +1,50 @@
+$screen-xsmall: 320px;
+$screen-small: 480px;
+$screen-medium: 768px;
+$screen-medium-large: 992px;
+$screen-large: 1024px;
+$screen-xlarge: 1200px;
+
+$query-xsmall: 'only screen and (min-width : #{$screen-xsmall})';
+$query-small: 'only screen and (min-width : 480px)';
+$query-medium: 'only screen and (min-width : #{$screen-medium})';
+$query-medium-large: 'only screen and (min-width : 992px)';
+$query-large: 'only screen and (min-width : 1024px)';
+$query-xlarge: 'only screen and (min-width : 1200px)';
+
+@mixin tablet {
+  @media #{$query-medium} {
+    @content;
+  }
+}
+
+@mixin tablet-large {
+  @media #{$query-medium} {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media #{$query-small} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$query-large} {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media #{$query-xlarge} {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media only screen and (max-width: #{$screen-medium}) {
+    @content;
+  }
+}
+
