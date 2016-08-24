@@ -1,6 +1,17 @@
+/*mobile portrait*/
+/*mobile landscape*/
+/*tablet*/
+/*desktop*/
+/* Mobile first */
+/* Desktop first */
 .grid {
   width: 100%;
   height: auto;
+  /*
+   * DEFAULT (FLUID COLUMNS)
+   * Default columns are fluid (non-responsive)
+   * throughout all resolutions
+   */
   /*
    * MOBILE
    * (No need to add column styles from mobile up since these
@@ -12,6 +23,11 @@
    */
   /*
    * DESKTOP
+   */
+  /*
+   * VERTICAL STACK
+   * An alternative to .c-m-12 or .c-t-12
+   * columns stack vertically in mobile or tablet resolutions
    */ }
   .grid > div[class^='c-'] {
     float: left;
@@ -53,7 +69,7 @@
     width: 91.66667%; }
   .grid .c-12 {
     width: 100%; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     .grid .c-m-1 {
       width: 8.33333%; }
     .grid .c-m-2 {
@@ -127,6 +143,12 @@
     .grid .c-d-11 {
       width: 91.66667%; }
     .grid .c-d-12 {
+      width: 100%; } }
+  @media only screen and (max-width: 767px) {
+    .grid.mobile-stack > div[class^='c-'] {
+      width: 100%; } }
+  @media only screen and (max-width: 1023px) {
+    .grid.tablet-stack > div[class^='c-'] {
       width: 100%; } }
 
 /*# sourceMappingURL=picnic-grid.css.map */

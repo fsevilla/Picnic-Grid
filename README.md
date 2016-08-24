@@ -28,7 +28,7 @@ First things first. As in any responsive website, make sure you do indicate so w
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-Second step: Load the picnic-grid.css which can be found within the /dist folder. Easy-peasy so far, right?
+Second step: Load the picnic-grid.css which can be found inside the `/dist` folder. Easy-peasy so far, right?
 Don't worry! It won't get more complicated than this, I promise. 
 
 ## Building your layout
@@ -73,6 +73,36 @@ Here is how the markup would look like:
     </div>
 </div>
 ```
+
+## Vertical stack
+
+If you are thinking: "Nah! I like how the columns stack vertically in Bootstrap" Ok, ok, I get it. That is also supported, though it is not the default behavior. By default, as you've seen, the grid is fluid and you can add classes to the columns to tell'em when to break. However, if you want, for instance, 50%-width columns that stack vertically in mobile screen sizes, you can do as follows:
+
+```html
+<div class="grid mobile-stack">
+    <div class="c-6"></div>
+    <div class="c-6"></div>
+</div>
+```
+
+This will display as 2 rows in mobile and 2 columns in larger screens. In other words, the above will have the same result as: 
+
+```html
+<div class="grid">
+    <div class="c-12 c-t-6"></div>
+    <div class="c-12 c-t-6"></div>
+</div>
+```
+
+You can also tell them to stack vertically in mobile and tablet, and display as 2 columns in larger screens:
+
+```html
+<div class="grid mobile-stack">
+    <div class="c-6"></div>
+    <div class="c-6"></div>
+</div>
+```
+
 
 ## Additional classes
 

@@ -1,16 +1,23 @@
-$screen-xsmall: 320px;
-$screen-small: 480px;
-$screen-medium: 768px;
-$screen-medium-large: 992px;
-$screen-large: 1024px;
-$screen-xlarge: 1200px;
+$screen-xsmall: 320; /*mobile portrait*/
+$screen-small: 480; /*mobile landscape*/
+$screen-medium: 768; /*tablet*/
+$screen-medium-large: 992;
+$screen-large: 1024; /*desktop*/
+$screen-xlarge: 1200;
 
-$query-xsmall: 'only screen and (min-width : #{$screen-xsmall})';
-$query-small: 'only screen and (min-width : 480px)';
-$query-medium: 'only screen and (min-width : #{$screen-medium})';
-$query-medium-large: 'only screen and (min-width : 992px)';
-$query-large: 'only screen and (min-width : 1024px)';
-$query-xlarge: 'only screen and (min-width : 1200px)';
+$query-xsmall: 'only screen and (min-width : #{$screen-xsmall}px)';
+$query-small: 'only screen and (min-width : #{$screen-small}px)';
+$query-medium: 'only screen and (min-width : #{$screen-medium}px)';
+$query-medium-large: 'only screen and (min-width : #{$screen-medium-large}px)';
+$query-large: 'only screen and (min-width : #{$screen-large}px)';
+$query-xlarge: 'only screen and (min-width : #{$screen-xlarge}px)';
+
+/* Mobile first */
+@mixin landscape {
+  @media #{$query-small} {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media #{$query-medium} {
@@ -19,13 +26,7 @@ $query-xlarge: 'only screen and (min-width : 1200px)';
 }
 
 @mixin tablet-large {
-  @media #{$query-medium} {
-    @content;
-  }
-}
-
-@mixin landscape {
-  @media #{$query-small} {
+  @media #{$query-medium-large} {
     @content;
   }
 }
@@ -42,9 +43,18 @@ $query-xlarge: 'only screen and (min-width : 1200px)';
   }
 }
 
+/* Desktop first */
 @mixin mobile-only {
-  @media only screen and (max-width: #{$screen-medium}) {
+  @media only screen and (max-width: ($screen-medium - 1) * 1px) {
     @content;
   }
 }
+
+@mixin tablet-down {
+  @media only screen and (max-width: ($screen-large - 1) * 1px) {
+    @content;
+  }
+}
+
+
 
