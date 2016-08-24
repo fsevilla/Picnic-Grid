@@ -97,7 +97,7 @@ This will display as 2 rows in mobile and 2 columns in larger screens. In other 
 You can also tell them to stack vertically in mobile and tablet, and display as 2 columns in larger screens:
 
 ```html
-<div class="grid mobile-stack">
+<div class="grid tablet-stack">
     <div class="c-6"></div>
     <div class="c-6"></div>
 </div>
