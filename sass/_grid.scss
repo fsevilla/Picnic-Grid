@@ -15,6 +15,7 @@ $gutter: 10px;
         padding-left: $gutter;
         padding-right: $gutter;
         box-sizing: border-box;
+        min-height: 1px;
     }
 
     &:after{
