@@ -39,11 +39,9 @@ $gutter: 10px;
         }
     }
 
-    /*
-     * DEFAULT (FLUID COLUMNS)
-     * Default columns are fluid (non-responsive)
-     * throughout all resolutions
-     */
+    // DEFAULT (FLUID COLUMNS)
+    // Default columns are fluid (non-responsive)
+    // throughout all resolutions
 
     @for $i from 1 through $maxColumns {
         .c-#{$i} {
@@ -57,12 +55,10 @@ $gutter: 10px;
     //     }
     // }
 
-    /*
-     * MOBILE
-     * (No need to add column styles from mobile up since these
-     * are defined in the default classes. Using mobile to define
-     * widths for mobile only screen sizes.)
-     */
+    // MOBILE
+    // (No need to add column styles from mobile up since these
+    // are defined in the default classes. Using mobile to define
+    // widths for mobile only screen sizes.)
     
     @include mobile-only{
         @for $i from 1 through $maxColumns {
@@ -72,9 +68,7 @@ $gutter: 10px;
         }
     }
 
-    /*
-     * TABLET
-     */
+    // TABLET
     @include tablet{
         @for $i from 1 through $maxColumns {
             .c-t-#{$i} {
@@ -83,9 +77,7 @@ $gutter: 10px;
         }
     }
 
-    /*
-     * DESKTOP
-     */
+    // DESKTOP
     @include desktop{
         @for $i from 1 through $maxColumns {
             .c-d-#{$i} {
@@ -94,11 +86,9 @@ $gutter: 10px;
         }
     }
 
-    /*
-     * VERTICAL STACK
-     * An alternative to .c-m-12 or .c-t-12
-     * columns stack vertically in mobile or tablet resolutions
-     */
+    // VERTICAL STACK
+    // An alternative to .c-m-12 or .c-t-12
+    // columns stack vertically in mobile or tablet resolutions
     &.mobile-stack{
         @include mobile-only{
             & > div[class^='c-']{

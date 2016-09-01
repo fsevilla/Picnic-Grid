@@ -1,8 +1,8 @@
-$screen-xsmall: 320; /*mobile portrait*/
-$screen-small: 480; /*mobile landscape*/
-$screen-medium: 768; /*tablet*/
+$screen-xsmall: 320; // mobile portrait
+$screen-small: 480; // mobile landscape
+$screen-medium: 768; // tablet
 $screen-medium-large: 992;
-$screen-large: 1024; /*desktop*/
+$screen-large: 1024; // desktop
 $screen-xlarge: 1200;
 
 $query-xsmall: 'only screen and (min-width : #{$screen-xsmall}px)';
@@ -12,7 +12,7 @@ $query-medium-large: 'only screen and (min-width : #{$screen-medium-large}px)';
 $query-large: 'only screen and (min-width : #{$screen-large}px)';
 $query-xlarge: 'only screen and (min-width : #{$screen-xlarge}px)';
 
-/* Mobile first */
+// Mobile first
 @mixin landscape {
   @media #{$query-small} {
     @content;
@@ -43,7 +43,7 @@ $query-xlarge: 'only screen and (min-width : #{$screen-xlarge}px)';
   }
 }
 
-/* Desktop first */
+// Desktop first
 @mixin mobile-only {
   @media only screen and (max-width: ($screen-medium - 1) * 1px) {
     @content;

@@ -5,37 +5,9 @@
   @project: https://github.com/fsevilla/Picnic-Grid
   @version: 0.1
 */
-/*mobile portrait*/
-/*mobile landscape*/
-/*tablet*/
-/*desktop*/
-/* Mobile first */
-/* Desktop first */
 .grid {
   width: 100%;
-  height: auto;
-  /*
-   * DEFAULT (FLUID COLUMNS)
-   * Default columns are fluid (non-responsive)
-   * throughout all resolutions
-   */
-  /*
-   * MOBILE
-   * (No need to add column styles from mobile up since these
-   * are defined in the default classes. Using mobile to define
-   * widths for mobile only screen sizes.)
-   */
-  /*
-   * TABLET
-   */
-  /*
-   * DESKTOP
-   */
-  /*
-   * VERTICAL STACK
-   * An alternative to .c-m-12 or .c-t-12
-   * columns stack vertically in mobile or tablet resolutions
-   */ }
+  height: auto; }
   .grid > div[class^='c-'] {
     float: left;
     padding-left: 10px;
