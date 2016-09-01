@@ -119,6 +119,15 @@ Picnic Grid adds, by default, a 10px gutter between columns. This is, however, o
 </div>
 ```
 
+#### Right-to-Left
+A simple feature we couldn't leave behind is the capability to display columns from right to left. The class `rtl` at the `grid` element will do the trick for you:
+```html
+<div class="grid rtl">
+    <div class="c-4"></div>
+    <div class="c-8"></div>
+</div>
+```
+
 #### Same height
 It is known that having same-height columns is one of the most obnoxious things to accomplish with HTML & CSS. 
 There are a few approaches we can follow to accomplish this result. Picnic Grid implements a "funny" solution I borrowed from the Internet, which plays with the bottom's margin and padding. 
@@ -132,7 +141,7 @@ Same as the example above, simply add a `same-height` class to your grid element
 ```
 
 ## Preview
-Ok, so demo is still not quite ready, but some examples can be found at the index.html file. Simply download/clone the project and see the grid in action by opening the index.html file in your browser. (Hope you are not using IE, seriously!).
+Still reading this? Man, you must be liking it :) Take a look at the [project's page](https://fsevilla.github.com/Picnic-Grid/) so you can see what the grid can do
 
 
 ## Contributing
