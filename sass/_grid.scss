@@ -39,6 +39,12 @@ $gutter: 10px;
         }
     }
 
+    &.rtl{
+        & > div[class^='c-']{
+            float: right;
+        }
+    }
+
     // DEFAULT (FLUID COLUMNS)
     // Default columns are fluid (non-responsive)
     // throughout all resolutions
