@@ -1,2 +1,3 @@
 .sass-cache
-dist/picnic-grid.css.map
+sass/
+styles/main.css.map

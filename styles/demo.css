@@ -1,0 +1,18 @@
+.demo [class*='grid'] > div{
+    background-color: #fcd4d4;
+    border: solid 1px #f2abab;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.grid.same-height{
+    border-bottom: solid 1px #f2abab;
+}
+
+.demo [class*='grid'] > div span{
+    display: block;
+}
+
+.demo .grid{
+    margin-bottom: 20px;
+}
