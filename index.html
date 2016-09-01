@@ -29,7 +29,7 @@
             <div class="cta">
                 <a href="https://github.com/fsevilla/Picnic-Grid/zipball/master">Download Zip</a>
                 <a href="https://github.com/fsevilla/Picnic-Grid">View on Github</a>
-                <a href="https://github.com/fsevilla/Picnic-Grid">View Demo</a>
+                <a href="demo/">View Demo</a>
             </div>
         </div>
     </div>
@@ -64,7 +64,7 @@
         </div>
 
         <div>
-            <a name="#install"></a>
+            <a name="install"></a>
             <h2>Installation</h2>
             <p>To use this <span class="removed">pretty cool</span> grid system, simply <a href="https://github.com/fsevilla/Picnic-Grid/zipball/master">download</a> or <a href="https://github.com/fsevilla/Picnic-Grid" target="_blank">clone</a> the project from Github.
             
@@ -79,23 +79,96 @@
             <p>The very first thing you may want to do is letting your browser know you're building a responsive website:</p>
             <pre><code class="language-html">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
             <p>Once you load the <strong>picnic-grid.css</strong> file simply use the following markup to make use of the grid system:</p>
+
+            <h3>2 columns</h3>
+            <div class="demo">
+                <div class="grid">
+                    <div class="c-6">c-6</div>
+                    <div class="c-6">c-6</div>
+                </div>
+            </div>
 <pre><code class="language-html">&lt;div class="grid"&gt;
-    &lt;div class="c-6">6 columns&lt;/div&gt;
-    &lt;div class="c-6">6 columns&lt;/div&gt;
+    &lt;div class="c-6"&gt;c-6&lt;/div&gt;
+    &lt;div class="c-6"&gt;c-6&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-            <p>This example creates a two-column layout, each column with a 50% width.</p>
+            <h3>12 columns</h3>
+            <div class="demo">
+                <div class="grid">
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                    <div class="c-1">c-1</div>
+                </div>
+            </div>
+<pre><code class="language-html">&lt;div class="grid"&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+    &lt;div class="c-1"&gt;c-1&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
 
             <h3>Adding responsive behavior</h3>
             <p>Making this grid responsive is fairly simple. It uses classes to indicate how to behave at certain breakpoints.</p>
+
+            <div class="demo">
+                <div class="grid">
+                    <div class="c-12 c-t-6">c-12<br /> c-t-6</div>
+                    <div class="c-12 c-t-6">c-12<br /> c-t-6</div>
+                </div>
+            </div>
 <pre><code class="language-html">&lt;div class="grid"&gt;
-    &lt;div class="c-12 c-t-6">12 &amp; 6 columns&lt;/div&gt;
-    &lt;div class="c-12 c-t-6">12 &amp; 6 columns&lt;/div&gt;
+    &lt;div class="c-12 c-t-6"&gt;c-12 c-t-6&lt;/div&gt;
+    &lt;div class="c-12 c-t-6"&gt;c-12 c-t-6&lt;/div&gt;
 &lt;/div&gt;</code></pre>
             
-            <p>As you may have already guessed, the above displays as two rows in mobile resolutions and changes to 2 columns in tablet and desktop. </p>
+            <p>As you may have already guessed, the above displays as two rows in mobile resolutions and changes to 2 columns in tablet and desktop.<br />Now lets play with the classes to create more responsive layouts.</p>
+
+            <div class="demo">
+                <div class="grid same-height">
+                    <div class="c-12 c-d-4">c-12<br />c-d-4</div>
+                    <div class="c-12 c-t-6 c-d-4">c-12<br />c-t-6<br /> c-d-4</div>
+                    <div class="c-12 c-t-6 c-d-4">c-12<br /> c-t-6<br /> c-d-4</div>
+                </div>
+            </div>
+<pre><code class="language-html">&lt;div class="grid"&gt;
+    &lt;div class="c-12 c-d-4"&gt;c-12 c-d-4&lt;/div&gt;
+    &lt;div class="c-12 c-t-6 c-d-4"&gt;c-12 c-t-6 c-d-4&lt;/div&gt;
+    &lt;div class="c-12 c-t-6 c-d-4"&gt;c-12 c-t-6 c-d-4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <div>
+            <a name="demo"></a>
+            <h2>Demo</h2>
+            <p>I bet you wanna see what else it can do. The link to the right takes you to the <a href="demo/">preview page</a>.</p>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="grid no-gutter">
+                <div class="c-6">Developed by <a href="https://github.com/fsevilla/">@fsevilla</a></div>
+                <div class="c-6">Hosted at <a href="https://pages.github.com/">Github pages</a></div>
+            </div>
+        </div>
+    </footer>
 </section>
 <script type="text/javascript" src="scripts/prism.js"></script>
 </body>
