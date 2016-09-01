@@ -46,6 +46,9 @@ header {
       text-decoration: none; }
       header nav a.active, header nav a:hover, header nav a:focus {
         color: #fafafa; }
+      header nav a.logo {
+        float: left;
+        font-size: 1.25em; }
 
 footer {
   width: 100%;
