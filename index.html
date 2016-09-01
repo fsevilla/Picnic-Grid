@@ -2,260 +2,242 @@
 <html>
 <head>
     <title>Picnic Grid System</title>
-    <link rel="stylesheet" href="dist/picnic-grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="styles/picnic-grid.css">
+    <link rel="stylesheet" href="styles/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-        html,
-        body{
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            font-family: Arial;
-        }
-
-        #mainContainer{
-            max-width: 1240px;
-            margin: 0 auto;
-        }
-
-        [class*='grid'] > div{
-            background-color: #fcd4d4;
-            border: solid 1px #f2abab;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        .grid.same-height{
-            border-bottom: solid 1px #f2abab;
-        }
-
-        [class*='grid'] > div span{
-            display: block;
-        }
-
-        .grid{
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
 <div id="mainContainer">
-    <h1>Picnic Grid System</h1>
-
-    <h2>Non-responsive columns</h2>
-    <div class="grid">
-        <div class="c-12">
-            .c-12
-        </div>
-    </div>
-    <div class="grid">
-        <div class="c-6">
-            .c-6
-        </div>
-        <div class="c-6">
-            .c-6
-        </div>
-    </div>
-    <div class="grid">
-        <div class="c-4">
-            <span>.c-4</span>
-        </div>
-        <div class="c-4">
-            <span>.c-4</span>
-        </div>
-        <div class="c-4">
-            <span>.c-4</span>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="c-4">
-            <span>.c-4</span>
-        </div>
-        <div class="c-8">
-            <span>.c-8</span>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="c-8">
-            <span>.c-8</span>
-        </div>
-        <div class="c-4">
-            <span>.c-4</span>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="c-2">
-            <span>.c-2</span>
-        </div>
-        <div class="c-2">
-            <span>.c-2</span>
-        </div>
-        <div class="c-2">
-            <span>.c-2</span>
-        </div>
-        <div class="c-2">
-            <span>.c-2</span>
-        </div>
-        <div class="c-2">
-            <span>.c-2</span>
-        </div>
-        <div class="c-2">
-            <span>.c-2</span>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
-        </div>
-        <div class="c-1">
-            <span>.c-1</span>
+    <header></header>
+    <div class="banner">
+        <div class="container">
+            <h1>Picnic Grid System</h1>
+            <h2>A lightweight, easy to use yet versatile, mobile-first responsive grid system. </h2>
+            <div class="cta">
+                <a href="https://github.com/fsevilla/Picnic-Grid/zipball/master" class="button danger">Download</a>
+                <a href="https://github.com/fsevilla/Picnic-Grid" class="button">Github project</a>
+            </div>
         </div>
     </div>
 
-    <h2>Right-to-Left</h2>
-    <div class="grid rtl">
-        <div class="c-3"><span>(1) .c-3</span></div>
-        <div class="c-3"><span>(2) .c-3</span></div>
-        <div class="c-3"><span>(3) .c-3</span></div>
-        <div class="c-3"><span>(4) .c-3</span></div>
-    </div>
-    
-    <h2>Vertical stack</h2>
-    <h3>Mobile</h3>
-    <div class="grid mobile-stack">
-        <div class="c-6">
-            <span>.c-6</span>
+    <div id="grid-sample" class="container">
+        <h2>Non-responsive columns</h2>
+        <div class="grid">
+            <div class="c-12">
+                .c-12
+            </div>
         </div>
-        <div class="c-6">
-            <span>.c-6</span>
+        <div class="grid">
+            <div class="c-6">
+                .c-6
+            </div>
+            <div class="c-6">
+                .c-6
+            </div>
         </div>
-    </div>
-    <h3>Tablet</h3>
-    <div class="grid tablet-stack">
-        <div class="c-4">
-            <span>.c-4</span>
+        <div class="grid">
+            <div class="c-4">
+                <span>.c-4</span>
+            </div>
+            <div class="c-4">
+                <span>.c-4</span>
+            </div>
+            <div class="c-4">
+                <span>.c-4</span>
+            </div>
         </div>
-        <div class="c-4">
-            <span>.c-4</span>
+        <div class="grid">
+            <div class="c-4">
+                <span>.c-4</span>
+            </div>
+            <div class="c-8">
+                <span>.c-8</span>
+            </div>
         </div>
-        <div class="c-4">
-            <span>.c-4</span>
+        <div class="grid">
+            <div class="c-8">
+                <span>.c-8</span>
+            </div>
+            <div class="c-4">
+                <span>.c-4</span>
+            </div>
         </div>
-    </div>
+        <div class="grid">
+            <div class="c-2">
+                <span>.c-2</span>
+            </div>
+            <div class="c-2">
+                <span>.c-2</span>
+            </div>
+            <div class="c-2">
+                <span>.c-2</span>
+            </div>
+            <div class="c-2">
+                <span>.c-2</span>
+            </div>
+            <div class="c-2">
+                <span>.c-2</span>
+            </div>
+            <div class="c-2">
+                <span>.c-2</span>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+            <div class="c-1">
+                <span>.c-1</span>
+            </div>
+        </div>
 
-    <h2>Responsive columns</h2>
-    <div class="grid">
-        <div class="c-12 c-d-6">
-            <span>.c-12</span>
-            <span>.c-d-6</span>
+        <h2>Right-to-Left</h2>
+        <div class="grid rtl">
+            <div class="c-3"><span>(1) .c-3</span></div>
+            <div class="c-3"><span>(2) .c-3</span></div>
+            <div class="c-3"><span>(3) .c-3</span></div>
+            <div class="c-3"><span>(4) .c-3</span></div>
         </div>
-        <div class="c-12 c-d-6">
-            <span>.c-12</span>
-            <span>.c-d-6</span>
+        
+        <h2>Vertical stack</h2>
+        <h3>Mobile</h3>
+        <div class="grid mobile-stack">
+            <div class="c-6">
+                <span>.c-6</span>
+            </div>
+            <div class="c-6">
+                <span>.c-6</span>
+            </div>
         </div>
-    </div>
-    <div class="grid">
-        <div class="c-12 c-t-4">
-            <span>.c-12</span>
-            <span>.c-t-4</span>
+        <h3>Tablet</h3>
+        <div class="grid tablet-stack">
+            <div class="c-4">
+                <span>.c-4</span>
+            </div>
+            <div class="c-4">
+                <span>.c-4</span>
+            </div>
+            <div class="c-4">
+                <span>.c-4</span>
+            </div>
         </div>
-        <div class="c-12 c-t-4">
-            <span>.c-12</span>
-            <span>.c-t-4</span>
-        </div>
-        <div class="c-12 c-t-4">
-            <span>.c-12</span>
-            <span>.c-t-4</span>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="c-12 c-d-4">
-            <span>.c-12</span>
-            <span>.c-d-4</span>
-        </div>
-        <div class="c-12 c-d-4">
-            <span>.c-12</span>
-            <span>.c-d-4</span>
-        </div>
-        <div class="c-12 c-d-4">
-            <span>.c-12</span>
-            <span>.c-d-4</span>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="c-m-12 c-t-12 c-d-4">
-            <span>.c-m-12</span>
-            <span>.c-t-12</span>
-            <span>.c-d-4</span>
-        </div>
-        <div class="c-m-12 c-t-6 c-d-4">
-            <span>.c-m-12</span>
-            <span>.c-t-6</span>
-            <span>.c-d-4</span>
-        </div>
-        <div class="c-m-12 c-t-6 c-d-4">
-            <span>.c-m-12</span>
-            <span>.c-t-6</span>
-            <span>.c-d-4</span>
-        </div>
-    </div>
 
-    <h2>More robust layouts</h2>
-    <div class="grid same-height">
-        <div class="c-6 c-t-4 c-d-3">
-            <span>(1)</span>
-            <span>.c-6</span>
-            <span>.c-t-4</span>
-            <span>.c-d-3</span>
-            <span>&nbsp;</span>
+        <h2>Responsive columns</h2>
+        <div class="grid">
+            <div class="c-12 c-d-6">
+                <span>.c-12</span>
+                <span>.c-d-6</span>
+            </div>
+            <div class="c-12 c-d-6">
+                <span>.c-12</span>
+                <span>.c-d-6</span>
+            </div>
         </div>
-        <div class="c-6 c-t-4 c-d-3">
-            <span>(2)</span>
-            <span>.c-6</span>
-            <span>.c-t-4</span>
-            <span>.c-d-3</span>
+        <div class="grid">
+            <div class="c-12 c-t-4">
+                <span>.c-12</span>
+                <span>.c-t-4</span>
+            </div>
+            <div class="c-12 c-t-4">
+                <span>.c-12</span>
+                <span>.c-t-4</span>
+            </div>
+            <div class="c-12 c-t-4">
+                <span>.c-12</span>
+                <span>.c-t-4</span>
+            </div>
         </div>
-        <div class="c-12 c-t-4 c-d-3">
-            <span>(3)</span>
-            <span>.c-12</span>
-            <span>.c-t-4</span>
-            <span>.c-d-3</span>
+        <div class="grid">
+            <div class="c-12 c-d-4">
+                <span>.c-12</span>
+                <span>.c-d-4</span>
+            </div>
+            <div class="c-12 c-d-4">
+                <span>.c-12</span>
+                <span>.c-d-4</span>
+            </div>
+            <div class="c-12 c-d-4">
+                <span>.c-12</span>
+                <span>.c-d-4</span>
+            </div>
         </div>
-        <div class="c-12 c-t-8 c-d-3">
-            <span>(4)</span>
-            <span>.c-12</span>
-            <span>.c-t-8</span>
-            <span>.c-d-3</span>
+        <div class="grid">
+            <div class="c-m-12 c-t-12 c-d-4">
+                <span>.c-m-12</span>
+                <span>.c-t-12</span>
+                <span>.c-d-4</span>
+            </div>
+            <div class="c-m-12 c-t-6 c-d-4">
+                <span>.c-m-12</span>
+                <span>.c-t-6</span>
+                <span>.c-d-4</span>
+            </div>
+            <div class="c-m-12 c-t-6 c-d-4">
+                <span>.c-m-12</span>
+                <span>.c-t-6</span>
+                <span>.c-d-4</span>
+            </div>
+        </div>
+
+        <h2>More robust layouts</h2>
+        <div class="grid same-height">
+            <div class="c-6 c-t-4 c-d-3">
+                <span>(1)</span>
+                <span>.c-6</span>
+                <span>.c-t-4</span>
+                <span>.c-d-3</span>
+                <span>&nbsp;</span>
+            </div>
+            <div class="c-6 c-t-4 c-d-3">
+                <span>(2)</span>
+                <span>.c-6</span>
+                <span>.c-t-4</span>
+                <span>.c-d-3</span>
+            </div>
+            <div class="c-12 c-t-4 c-d-3">
+                <span>(3)</span>
+                <span>.c-12</span>
+                <span>.c-t-4</span>
+                <span>.c-d-3</span>
+            </div>
+            <div class="c-12 c-t-8 c-d-3">
+                <span>(4)</span>
+                <span>.c-12</span>
+                <span>.c-t-8</span>
+                <span>.c-d-3</span>
+            </div>
         </div>
     </div>
 </div>

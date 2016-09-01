@@ -1,0 +1,130 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-family: 'Roboto Condensed', 'Poppins', sans-serif;
+}
+
+a, a:hover, a:focus{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.banner:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/background2.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+}
+
+.banner h1{
+    font-size: 2.5em;
+    font-weight: normal;
+    padding-left: 40px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.banner h2{
+    margin: 0;
+    padding-left: 40px;
+    max-width: 50%;
+    font-size: 1.25em;
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .cta{
+    padding: 20px 40px 0;
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+
+.button{
+    background-color: #fff;
+    color: #333;
+    border: solid 1px #ccc;
+    padding: 8px 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: #dedede;
+}
+
+.button.danger{
+    background-color: #C9342F;
+    color: #fff;
+    border-color: #AF1923;
+}
+
+.button.danger:hover{
+    background-color: #AF1923;
+}
+
+.button.primary{
+    background-color: #0077B5;
+    color: #fff;
+    border-color: #046293;
+}
+
+.button.primary:hover{
+    background-color: #046293;
+}
+
+.banner .button{
+    width: 120px;
+    margin: 0 5px;
+}
+
+
+
+
+[class*='grid'] > div{
+    background-color: #fcd4d4;
+    border: solid 1px #f2abab;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.grid.same-height{
+    border-bottom: solid 1px #f2abab;
+}
+
+[class*='grid'] > div span{
+    display: block;
+}
+
+.grid{
+    margin-bottom: 20px;
+}
