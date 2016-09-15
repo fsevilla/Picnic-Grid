@@ -15,6 +15,7 @@
     "homepage": "https://fsevilla.github.io/Picnic-Grid",
     "ignore": [
         "**/.*",
-        "sass"
+        "sass",
+        "index.html"
     ]
 }
