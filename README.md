@@ -31,6 +31,14 @@ First things first. As in any responsive website, make sure you do indicate so w
 Second step: Load the picnic-grid.css which can be found inside the `/dist` folder. Easy-peasy so far, right?
 Don't worry! It won't get more complicated than this, I promise. 
 
+## Installation
+
+### With Bower
+```sh
+$ bower install picnic-grid
+```
+
+
 ## Building your layout
 At this point, we are ready to start using the grid. The basic HTML markup is as follows:
 
