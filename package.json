@@ -1,0 +1,25 @@
+{
+  "name": "picnic-grid",
+  "version": "1.0.0",
+  "description": "A lightweight, easy to use yet versatile, mobile-first responsive grid system.",
+  "main": "dist/picnic-grid.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsevilla/Picnic-Grid.git"
+  },
+  "keywords": [
+    "grid",
+    "system",
+    "responsive",
+    "layout"
+  ],
+  "author": "Francisco Sevilla <fsevilla@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fsevilla/Picnic-Grid/issues"
+  },
+  "homepage": "https://github.com/fsevilla/Picnic-Grid#readme"
+}
