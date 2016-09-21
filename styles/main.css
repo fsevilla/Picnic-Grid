@@ -1,3 +1,172 @@
+/*
+  Picnic Grid System
+  @author: Francisco Sevilla
+  @description: A lightweight, easy to use yet versatile, mobile-first responsive grid system. 
+  @project: https://github.com/fsevilla/Picnic-Grid
+  @version: 1.0
+*/
+.grid {
+  width: 100%;
+  height: auto; }
+  .grid > div[class^='c-'] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    min-height: 1px; }
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .grid.no-gutter > div[class^='c-'] {
+    padding: 0; }
+  .grid.same-height {
+    overflow: hidden; }
+    .grid.same-height > div[class^='c-'] {
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+  .grid.rtl > div[class^='c-'] {
+    float: right; }
+  .grid .c-1 {
+    width: 8.33333%; }
+  .grid .c-2 {
+    width: 16.66667%; }
+  .grid .c-3 {
+    width: 25%; }
+  .grid .c-4 {
+    width: 33.33333%; }
+  .grid .c-5 {
+    width: 41.66667%; }
+  .grid .c-6 {
+    width: 50%; }
+  .grid .c-7 {
+    width: 58.33333%; }
+  .grid .c-8 {
+    width: 66.66667%; }
+  .grid .c-9 {
+    width: 75%; }
+  .grid .c-10 {
+    width: 83.33333%; }
+  .grid .c-11 {
+    width: 91.66667%; }
+  .grid .c-12 {
+    width: 100%; }
+  @media only screen and (max-width: 767px) {
+    .grid .c-m-1 {
+      width: 8.33333%; }
+    .grid .c-m-2 {
+      width: 16.66667%; }
+    .grid .c-m-3 {
+      width: 25%; }
+    .grid .c-m-4 {
+      width: 33.33333%; }
+    .grid .c-m-5 {
+      width: 41.66667%; }
+    .grid .c-m-6 {
+      width: 50%; }
+    .grid .c-m-7 {
+      width: 58.33333%; }
+    .grid .c-m-8 {
+      width: 66.66667%; }
+    .grid .c-m-9 {
+      width: 75%; }
+    .grid .c-m-10 {
+      width: 83.33333%; }
+    .grid .c-m-11 {
+      width: 91.66667%; }
+    .grid .c-m-12 {
+      width: 100%; } }
+  @media only screen and (min-width: 768px) {
+    .grid .c-t-1 {
+      width: 8.33333%; }
+    .grid .c-t-2 {
+      width: 16.66667%; }
+    .grid .c-t-3 {
+      width: 25%; }
+    .grid .c-t-4 {
+      width: 33.33333%; }
+    .grid .c-t-5 {
+      width: 41.66667%; }
+    .grid .c-t-6 {
+      width: 50%; }
+    .grid .c-t-7 {
+      width: 58.33333%; }
+    .grid .c-t-8 {
+      width: 66.66667%; }
+    .grid .c-t-9 {
+      width: 75%; }
+    .grid .c-t-10 {
+      width: 83.33333%; }
+    .grid .c-t-11 {
+      width: 91.66667%; }
+    .grid .c-t-12 {
+      width: 100%; } }
+  @media only screen and (min-width: 1024px) {
+    .grid .c-d-1 {
+      width: 8.33333%; }
+    .grid .c-d-2 {
+      width: 16.66667%; }
+    .grid .c-d-3 {
+      width: 25%; }
+    .grid .c-d-4 {
+      width: 33.33333%; }
+    .grid .c-d-5 {
+      width: 41.66667%; }
+    .grid .c-d-6 {
+      width: 50%; }
+    .grid .c-d-7 {
+      width: 58.33333%; }
+    .grid .c-d-8 {
+      width: 66.66667%; }
+    .grid .c-d-9 {
+      width: 75%; }
+    .grid .c-d-10 {
+      width: 83.33333%; }
+    .grid .c-d-11 {
+      width: 91.66667%; }
+    .grid .c-d-12 {
+      width: 100%; } }
+  @media only screen and (max-width: 767px) {
+    .grid.mobile-stack > div[class^='c-'] {
+      width: 100%; } }
+  @media only screen and (max-width: 1023px) {
+    .grid.tablet-stack > div[class^='c-'] {
+      width: 100%; } }
+
+header {
+  background-color: #0c0c0c;
+  position: relative;
+  z-index: 1; }
+  header nav {
+    font-size: 1em;
+    text-align: right; }
+    header nav a {
+      color: #fafafa;
+      line-height: 42px;
+      display: inline-block;
+      margin: 5px 6px 0;
+      border-bottom: solid 3px transparent;
+      padding: 0 2px;
+      text-decoration: none; }
+      header nav a.active, header nav a:hover, header nav a:focus {
+        border-color: #fafafa; }
+      header nav a.logo {
+        float: left;
+        font-size: 1.25em; }
+
+footer {
+  width: 100%;
+  font-size: 0.9em;
+  padding: 0;
+  background-color: #0c0c0c;
+  color: #fafafa;
+  line-height: 80px;
+  margin-top: 40px; }
+  footer a {
+    color: #ccc; }
+  footer .grid > div:last-child {
+    text-align: right; }
+
 html,
 body {
   margin: 0;
@@ -28,35 +197,6 @@ section {
 section:nth-of-type(2) {
   top: 100%;
   font-size: 1.15em; }
-
-header {
-  background-color: #0c0c0c;
-  position: relative;
-  z-index: 1; }
-  header nav {
-    font-size: 1em;
-    text-align: right; }
-    header nav a {
-      color: #fafafa;
-      line-height: 42px;
-      display: inline-block;
-      margin: 5px 6px 0;
-      border-bottom: solid 3px transparent;
-      padding: 0 2px;
-      text-decoration: none; }
-      header nav a.active, header nav a:hover, header nav a:focus {
-        color: #fafafa; }
-      header nav a.logo {
-        float: left;
-        font-size: 1.25em; }
-
-footer {
-  width: 100%;
-  font-size: 0.9em;
-  padding: 0;
-  padding-top: 40px; }
-  footer .grid > div:last-child {
-    text-align: right; }
 
 .banners {
   top: 40px;
