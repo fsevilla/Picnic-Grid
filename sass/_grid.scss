@@ -10,7 +10,7 @@ $gutter: 10px;
     width: 100%;
     height: auto;
 
-    & > div[class^='c-']{
+    & > div[class*='c-']{
         float: left;
         padding-left: $gutter;
         padding-right: $gutter;

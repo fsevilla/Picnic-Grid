@@ -3,12 +3,12 @@
   @author: Francisco Sevilla
   @description: A lightweight, easy to use yet versatile, mobile-first responsive grid system. 
   @project: https://github.com/fsevilla/Picnic-Grid
-  @version: 1.0
+  @version: 1.0.1
 */
 .grid {
   width: 100%;
   height: auto; }
-  .grid > div[class^='c-'] {
+  .grid > div[class*='c-'] {
     float: left;
     padding-left: 10px;
     padding-right: 10px;
