@@ -3,6 +3,7 @@
 <head>
     <title>Picnic Grid System</title>
     <link rel="stylesheet" href="dist/picnic-grid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
         html,
@@ -36,6 +37,15 @@
         .grid{
             margin-bottom: 20px;
         }
+
+        .hrow, .data{
+            margin-bottom: 0;
+        }
+
+        .data > div{
+            background-color: #fff7f7;
+        }
+
     </style>
 </head>
 <body>
@@ -173,6 +183,91 @@
         </div>
     </div>
 
+    <h2>Show/Hide columns</h2>
+    <div class="grid same-height hrow">
+        <div class="c-4"></div>
+        <div class="c-2">
+            <strong>Default Screen</strong>
+            <span>>= 0px</span>
+        </div>
+        <div class="c-2">
+            <strong>Small Devices</strong>
+            <span>Mobiles</span>
+        </div>
+        <div class="c-2">
+            <strong>Medium Devices</strong>
+            <span>Tablets</span>
+        </div>
+        <div class="c-2">
+            <strong>Large Devices</strong>
+            <span>Desktops</span>
+        </div>
+     </div>
+     <div class="grid same-height data">
+         <div class="c-4"><span>.in-m</span></div>
+         <div class="c-2"></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+     </div>
+     <div class="grid same-height data">
+         <div class="c-4"><span>.in-t</span></div>
+         <div class="c-2"></div>
+         <div class="c-2"></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+     </div>
+     <div class="grid same-height data">
+         <div class="c-4"><span>.in-d</span></div>
+         <div class="c-2"></div>
+         <div class="c-2"></div>
+         <div class="c-2"></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+     </div>
+     <div class="grid same-height data">
+         <div class="c-4"><span>.not-in-m</span></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+         <div class="c-2"></div>
+         <div class="c-2"></div>
+         <div class="c-2"></div>
+     </div>
+     <div class="grid same-height data">
+         <div class="c-4"><span>.not-in-t</span></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+         <div class="c-2"></div>
+         <div class="c-2"></div>
+     </div>
+     <div class="grid same-height data">
+         <div class="c-4"><span>.not-in-d</span></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+         <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+         <div class="c-2"></div>
+     </div>
+    <div class="grid same-height data">
+        <div class="c-4">
+            <strong>Mobile only</strong>
+            <span>.in-m</span>
+            <span>.not-in-t</span>
+        </div>
+        <div class="c-2"></div>
+        <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+        <div class="c-2"></div>
+        <div class="c-2"></div>
+    </div>
+    <div class="grid same-height data">
+        <div class="c-4">
+            <strong>Tablet only</strong>
+            <span>.in-t</span>
+            <span>.not-in-d</span>
+        </div>
+        <div class="c-2"></div>
+        <div class="c-2"></div>
+        <div class="c-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+        <div class="c-2"></div>
+    </div>
+
     <h2>Responsive columns</h2>
     <div class="grid">
         <div class="c-12 c-d-6">
@@ -213,6 +308,7 @@
         </div>
     </div>
     <div class="grid">
+        <h3></h3>
         <div class="c-m-12 c-t-12 c-d-4">
             <span>.c-m-12</span>
             <span>.c-t-12</span>
@@ -230,7 +326,7 @@
         </div>
     </div>
 
-    <h2>More robust layouts</h2>
+    <h2>Layouts samples</h2>
     <div class="grid same-height">
         <div class="c-6 c-t-4 c-d-3">
             <span>(1)</span>

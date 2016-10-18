@@ -16,6 +16,50 @@ $gutter: 10px;
         padding-right: $gutter;
         box-sizing: border-box;
         min-height: 1px;
+
+        &[class*='in-']{
+            display: none;
+
+            @include mobile{
+                &.in-m{
+                    display: block;
+                }
+            }
+
+            @include tablet{
+                &.in-t{
+                    display: block;
+                }
+            }
+
+            @include desktop{
+                &.in-d{
+                    display: block;
+                }
+            }
+        }
+
+        &[class*='not-in']{
+            display: block;
+
+            @include mobile{
+                &.not-in-m{
+                    display: none;
+                }
+            }
+
+            @include tablet{
+                &.not-in-t{
+                    display: none;
+                }
+            }
+
+            @include desktop{
+                &.not-in-d{
+                    display: none;
+                }
+            }
+        }
     }
 
     &:after{
