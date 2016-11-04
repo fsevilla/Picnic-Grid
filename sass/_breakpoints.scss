@@ -13,6 +13,12 @@ $query-large: 'only screen and (min-width : #{$screen-large}px)';
 $query-xlarge: 'only screen and (min-width : #{$screen-xlarge}px)';
 
 // Mobile first
+@mixin mobile {
+  @media #{$query-xsmall} {
+    @content;
+  }
+}
+
 @mixin landscape {
   @media #{$query-small} {
     @content;

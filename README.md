@@ -148,6 +148,22 @@ Same as the example above, simply add a `same-height` class to your grid element
 </div>
 ```
 
+## Hide/Show columns
+Ok, I've added a few classes to hide and show the columns based on the breakpoints. This grid (and to keep it simple) is currently focused on the 3 major breakpoints: mobile, tablet and desktop. 
+Here you can see a chart of the classes that were added and how these behave.
+
+|               | Default (≤ 0px) | Mobile  (≤ 320px) | Tablets (≤ 768px) | Desktop (≤ 1024px) |
+| ------------- | --------------- | ----------------- | ----------------- | ------------------ |
+| .in-m         |                 |          X        |          X        |          X         |
+| .in-t         |                 |                   |          X        |          X         |
+| .in-d         |                 |                   |                   |          X         |
+| .not-in-m     |       X         |                   |                   |                    |
+| .not-in-t     |       X         |          X        |                   |                    |
+| .not-in-d     |       X         |          X        |          X        |                    |
+
+No Mobile-only, Tablet-only, Desktop-only classes? Well, it first crossed my mind, but I thought it was simple enought to play with the classes that it was really not worth it. Eg. Tablet only? Simply do `class="in-t not-in-d"`. Thoughts?
+
+
 ## Preview
 Still reading this? Man, you must be liking it :) Take a look at the [project's page](https://fsevilla.github.com/Picnic-Grid/) so you can see what the grid can do
 

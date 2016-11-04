@@ -3,7 +3,7 @@
   @author: Francisco Sevilla
   @description: A lightweight, easy to use yet versatile, mobile-first responsive grid system. 
   @project: https://github.com/fsevilla/Picnic-Grid
-  @version: 1.0.1
+  @version: 1.0.2
 */
 .grid {
   width: 100%;
@@ -14,6 +14,28 @@
     padding-right: 10px;
     box-sizing: border-box;
     min-height: 1px; }
+    .grid > div[class*='c-'][class*='in-'] {
+      display: none; }
+      @media only screen and (min-width: 320px) {
+        .grid > div[class*='c-'][class*='in-'].in-m {
+          display: block; } }
+      @media only screen and (min-width: 768px) {
+        .grid > div[class*='c-'][class*='in-'].in-t {
+          display: block; } }
+      @media only screen and (min-width: 1024px) {
+        .grid > div[class*='c-'][class*='in-'].in-d {
+          display: block; } }
+    .grid > div[class*='c-'][class*='not-in'] {
+      display: block; }
+      @media only screen and (min-width: 320px) {
+        .grid > div[class*='c-'][class*='not-in'].not-in-m {
+          display: none; } }
+      @media only screen and (min-width: 768px) {
+        .grid > div[class*='c-'][class*='not-in'].not-in-t {
+          display: none; } }
+      @media only screen and (min-width: 1024px) {
+        .grid > div[class*='c-'][class*='not-in'].not-in-d {
+          display: none; } }
   .grid:after {
     content: "";
     display: table;
