@@ -165,7 +165,7 @@ No Mobile-only, Tablet-only, Desktop-only classes? Well, it first crossed my min
 
 
 ## Preview
-Still reading this? Man, you must be liking it :) Take a look at the [project's page](https://fsevilla.github.com/Picnic-Grid/) so you can see what the grid can do
+Still reading this? Man, you must be liking it :) Take a look at the [project's page](https://fsevilla.github.io/Picnic-Grid/) so you can see what the grid can do
 
 
 ## Contributing
